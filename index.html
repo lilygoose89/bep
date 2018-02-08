@@ -2,35 +2,13 @@
 title:
 description:
 keywords:
+layout: default
 ---
-<!DOCTYPE html>
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-
-  <!-- End Google Analytics -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-  <title>{{page.title}}</title>
-  <meta name="description" content="{{page.description}}"/>
-  <meta name="keywords" content="{{page.keywords}}"/>
-  <link href="https://fonts.googleapis.com/css?family=Kanit:200,300&amp;subset=thai" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
   <header id="hero" class="bg-hero text-center text-white">
-    <div class="grid-spaceBetween">
-      <div class="col-1"></div>
-      <div class="col-5 pad-top-s">
-        <img class="hero-logo" src="/images/BEP-logo.png" alt="bep bicycle courier logo"/></a>
-      </div>
-      <div class="col-1">
-        <a><img src="/images/white-languageicon-english-thai.png" alt="translation switcher icon"/></a>
-      </div>
+    <img class="hero-logo pad-top-s" src="/images/BEP-logo.png" alt="bep bicycle courier logo"/></a>
+    </div>
+    <div>
+      <a><img class="translation-icon" src="/images/white-languageicon-english-thai.png" alt="translation switcher icon"/></a>
     </div>
     <h1 class="editable">We are a bicycle courier express delivery service based in Chiang Mai.</h1>
     <h3 class="editable">Fast, friendly, and fossil-fuel free!</h3>
@@ -39,18 +17,18 @@ keywords:
     <h4 class="editable"><i class="fa fa-check-circle"></i> Documents</h4>
     <h3 class="editable">If your package fits in our bags we will get it where it needs to go, safely and securely.</h3>
     <div class="margin-top-xs">
-      <a href="/#pricing" class="button-white"><button><span class="editable">Get Started</span></button></a>
+      <a href="/#pricing"><button class="button-white"><span class="editable">Get Started</span></button></a>
     </div>
   </header>
   <section id="pricing">
-    <div class="outline-turq margin-all-s pad-all-s text-center">
+    <div class="outline-turq shadow margin-all-s pad-all-s text-center">
       <h2 class="editable pad-bottom-s">Pricing</h2>
       <h4 class="editable pad-bottom-xs">Base price: <span class="editable text-pink">฿30</span> + <span class="editable text-pink">฿10</span> per each additional block.</h4>
       <img src="/images/BEP-map.png" alt="bep bicycle courier delivery area map"/>
     </div>
   </section>
   <section id="order">
-    <div class="outline-turq margin-all-s pad-all-s">
+    <div class="outline-turq shadow margin-all-s pad-all-s">
       <h2 class="editable text-center">Place Your Delivery Order</h2>
       <form method="POST" action="https://formspree.io/lily@cnxweb.site">
         <div class="margin-all-s">
@@ -124,20 +102,3 @@ keywords:
     <p class="editable">We believe the bicycle is the fastest to get in and around the city, and the best part, is that they’re totally fossil-fuel free!</p>
     <p class="editable">When you use our courier service, you are supporting our riders in their love of cycling.</p>
   </section>
-  <footer class="bg-footer text-white text-center">
-    <a href="/terms" class="button-white"><button><span class="editable">Terms of Service</span></button></a>
-    <div class="grid-center pad-all-s">
-      <div class="text-right">
-        <a href="https://www.facebook.com/bepcyclecouriers/" target=blank><img src="images/face.png" alt="facebook"/></a>
-      </div>
-      <div class="">
-        <a href="https://www.instagram.com/bepcycle/" target=blank><img src="images/insta.png" alt="instagram"/></a>
-      </div>
-    </div>
-    <h4 class="text-white"> <i class="fa fa-copyright" aria-hidden="true"></i> <a href="cnxweb.site">CNX Web</a> <script type="text/javascript">
-  document.write(new Date().getFullYear());
-</script></h4>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="/js/main.js" type="text/javascript"></script>
-</body>
