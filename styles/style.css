@@ -3,7 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: solid 0.25px powderblue;
+  /*border: solid 0.25px powderblue;*/
 }
 [class*=grid-],[class*=grid_],[class~=grid]{
   margin: 0;
