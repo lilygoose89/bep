@@ -5,13 +5,14 @@ $(document).ready(function(){
   console.log('ready!');
 
 });
+
 //smooth scrolling better because rachel
 $('a[href^="#"]').on('click',function () {
   var link = this.hash.substr(1);
   var section = $('*[id=' + link + ']');
 
   $('html,body').animate({
-    scrollTop: section
+    scrollTop: section.offset().top - 48
   }, 800);
   return false;
 });

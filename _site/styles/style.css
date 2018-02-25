@@ -44,6 +44,11 @@ h5 {
 h6,p {
   font-weight: 200;
 }
+ul {
+  font-weight: 200;
+  line-height: 1.5;
+  padding-left: 20px;
+}
 
 .text-center {
   text-align: center;
@@ -71,22 +76,20 @@ a:hover {
 }
 
 .button-white {
+  position: relative;
   border: solid white 3px;
   border-radius: 50px;
   background: transparent;
   padding: 0.5% 1.5%;
   color: white;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .button-white:hover {
-  -webkit-transform: translateY(-1px);
-  -moz-transform: translateY(-1px);
-  -ms-transform: translateY(-1px);
-  -o-transform: translateY(-1px);
-  transform: translateY(-1px);
+  font-family: 1.1em;
+  font-weight: bolder;
 }
 .button-grad {
   border-radius: 50px;
@@ -94,10 +97,10 @@ a:hover {
   background: linear-gradient( to bottom right, #7b299e, #fc1a9e);
   color: white;
   border: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .button-grad:hover {
   box-shadow: 1px 1px 5px grey;
@@ -119,11 +122,29 @@ a:hover {
 section {
   padding: 2.5% 15%;
 }
+.wide-section {
+  padding: 2.5% 10%;
+}
+.space-left {
+  padding-left: 1%;
+}
+.space-right {
+  padding-right: 1%;
+}
+@media all and (max-width:1024px) {
+  .space-left {
+    padding-left: 0;
+  }
+  .space-right {
+    padding-right: 0;
+  }
+}
 @media all and (max-width:576px) {
-  section {
+  section,.wide-section {
     padding: 5%;
   }
 }
+
 
 .translation-icon {
   position: absolute;
@@ -135,6 +156,9 @@ section {
 .hero-logo {
   max-height: 50vh;
 }
+.small-logo {
+  max-height: 20vh;
+}
 
 .bg-hero {
   background: linear-gradient(#0c3556, #7b299e, #fc1a9e);
@@ -143,7 +167,7 @@ section {
 .bg-team {
   background: linear-gradient(#fc1a9e, #7b299e, #0c3556);
 }
-.bg-footer {
+.bg-blue {
   background: #0c3556;
 }
 
@@ -203,7 +227,7 @@ textarea {
   overflow: hidden;
   position: auto;
 }
-.team-image {
+/* .team-image {
   background-image: url("/images/fuji.jpg");
   background-color: white;
   background-repeat: no-repeat;
@@ -211,8 +235,19 @@ textarea {
   background-position: center;
   height: 100vh;
   overflow-y: hidden;
+} */
+@media all and (max-width:911px) {
+  .team-circle {
+    height: 150px;
+    width: 150px;
+  }
 }
-
+@media all and (max-width:685px) {
+  .team-circle {
+    height: 100px;
+    width: 100px;
+  }
+}
 
 .display-block {
   display: block;

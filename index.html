@@ -21,7 +21,7 @@ layout: default
       </div>
     </div>
     <div class="margin-top-xs">
-      <a href="/#pricing"><button class="button-white"><span class="editable">Get Started</span></button></a>
+      <a href="/#order"><button class="button-white"><span class="editable">Get Started</span></button></a>
     </div>
   </header>
   <section id="pricing">
@@ -29,12 +29,14 @@ layout: default
       <h2 class="editable">Pricing</h2>
       <h4 class="editable pad-bottom-xs">Base price: <span class="editable text-pink">฿30</span> + <span class="editable text-pink">฿10</span> per each additional block.</h4>
       <img src="/images/BEP-map.png" alt="bep bicycle courier delivery area map"/>
+      <h5>Some additional fees may apply, <a href="/terms">please see our terms of service for details</a>.</h5>
     </div>
   </section>
   <section id="order">
     <div class="outline-turq shadow margin-all-s pad-all-s">
       <h2 class="editable text-center">Place Your Delivery Order</h2>
       <form method="POST" action="https://formspree.io/lily@cnxweb.site">
+        <input type="hidden" name="_next" value="/thankyou.html" />
         <div class="pad-all-s">
           <h3>Customer Details</h3>
           <div class="grid">
@@ -45,10 +47,10 @@ layout: default
         </div>
         <div class="pad-all-s">
           <h3>Order Details</h3>
-          <h5 class="editable pad-top-xs">Start typing in an address, and Google will provide suggestions to autocomplete the additional fields below. You can drag the marker to update the GPS coordinates.<br /><br /><a href="https://www.maps.ie/coordinates.html" target=blank>Click here if you want to get exact coordinates for your current location</a>.</h5>
+          <h5 class="editable pad-top-xs">Start typing in an address below, and Google will provide suggestions to autocomplete the additional fields below. You can drag the marker to update the GPS coordinates.<br /><br /><a href="https://www.maps.ie/coordinates.html" target=blank>Click here if you want to get exact coordinates for your current location</a>.</h5>
         </div>
         <div class="grid-spaceBetween pad-all-s">
-          <div class="col-6_md-12 pad-right-xs">
+          <div class="col-6_md-12 space-right">
             <h3 class="text-center"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> Pick-Up Point</h3>
             <div class="points-cont">
               <div class="points point-1">
@@ -65,7 +67,7 @@ layout: default
               </div>
             </div>
           </div>
-          <div class="col-6_md-12 pad-left-xs">
+          <div class="col-6_md-12 space-left">
             <h3 class="text-center"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i> Drop-Off Point</h3>
             <div class="points-cont">
               <div class="points point-2">
@@ -84,7 +86,7 @@ layout: default
           </div>
         </div>
         <div class="grid pad-left-s pad-right-s">
-          <label class="col-12" for="type"><i class="fa fa-dropbox" aria-hidden="true"></i> What type of package are we delivering?</label>
+          <label class="col-12 pad-bottom-xs" for="type"><i class="fa fa-dropbox" aria-hidden="true"></i> What type of package are we delivering?</label>
             <select class="col-12" name="type">
               <option value="Documents">Documents</option>
               <option value="Small Package">Small Package</option>
@@ -92,7 +94,7 @@ layout: default
               <option value="Food">Food</option>
               <option value="Other">Other</option>
             </select>
-          <label class="col-12 pad-top-s" for="message"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Notes or comments</label>
+          <label class="col-12 pad-top-s pad-bottom-xs" for="message"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Notes or comments</label>
           <textarea class="col-12 pad-left-xs" name="message" placeholder="Your message"></textarea>
         </div>
         <button class="button-grad margin-left-s margin-top-s" type="submit">Send Delivery Request</button>
@@ -100,7 +102,7 @@ layout: default
     </div>
     <div class="outline-turq shadow margin-all-s pad-all-s text-center">
       <h2>Having trouble using the order form?</h2>
-      <h4>No worries, you can also message us via <a>Line</a> or <a>Facebook</a> to place an order, or call <a href="tel:0646897923">(064) 689-7923</a></h4>
+      <h4>No worries, you can also message us via <a href="http://line.me/ti/p/~bepc" target=blank>Line</a> or <a href="https://www.facebook.com/bepcyclecouriers/" target=blank>Facebook</a> to place an order, or call <a href="tel:0646897923">(064) 689-7923</a></h4>
     </div>
   </section>
   <section id="team" class="bg-team text-white text-center">
@@ -109,41 +111,42 @@ layout: default
     <div class="grid-middle-center">
       <div class="margin-all-xs">
         <img class="team-circle" src="/images/fuji.jpg" alt="bep team member 1"/>
-        <h3 class="editable">Name Here</h3>
+        <p class="editable">Name Here</p>
       </div>
       <div class="margin-all-xs">
         <img class="team-circle" src="/images/fuji.jpg" alt="bep team member 1"/>
-        <h3 class="editable">Name Here</h3>
+        <p class="editable">Name Here</p>
       </div>
       <div class="margin-all-xs">
         <img class="team-circle" src="/images/fuji.jpg" alt="bep team member 1"/>
-        <h3 class="editable">Name Here</h3>
-      </div>
-    </div>
-    <div class="grid-middle-center">
-      <div class="margin-all-xs">
-        <img class="team-circle" src="/images/fuji.jpg" alt="bep team member 1"/>
-        <h3 class="editable">Name Here</h3>
-      </div>
-      <div class="margin-all-xs">
-        <img class="team-circle" src="/images/fuji.jpg" alt="bep team member 1"/>
-        <h3 class="editable">Name Here</h3>
+        <p class="editable">Name Here</p>
       </div>
     </div>
     <div class="grid-middle-center">
       <div class="margin-all-xs">
         <img class="team-circle" src="/images/fuji.jpg" alt="bep team member 1"/>
-        <h3 class="editable">Name Here</h3>
+        <p class="editable">Name Here</p>
       </div>
       <div class="margin-all-xs">
         <img class="team-circle" src="/images/fuji.jpg" alt="bep team member 1"/>
-        <h3 class="editable">Name Here</h3>
+        <p class="editable">Name Here</p>
+      </div>
+    </div>
+    <div class="grid-middle-center">
+      <div class="margin-all-xs">
+        <img class="team-circle" src="/images/fuji.jpg" alt="bep team member 1"/>
+        <p class="editable">Name Here</p>
       </div>
       <div class="margin-all-xs">
         <img class="team-circle" src="/images/fuji.jpg" alt="bep team member 1"/>
-        <h3 class="editable">Name Here</h3>
+        <p class="editable">Name Here</p>
+      </div>
+      <div class="margin-all-xs">
+        <img class="team-circle" src="/images/fuji.jpg" alt="bep team member 1"/>
+        <p class="editable">Name Here</p>
       </div>
     </div>
     <h3 class="editable pad-top-s pad-bottom-xs">Why Bicycles?</h3>
-    <p class="editable">We believe the bicycle is the fastest way to get in and around the city, and the best part, is that they’re totally fossil-fuel free! When you use our courier service, you are supporting our riders in their love of cycling.</p>
+    <p class="editable pad-bottom-s">We believe the bicycle is the fastest way to get in and around the city, and the best part, is that they’re totally fossil-fuel free! When you use our courier service, you are supporting our riders in their love of cycling.</p>
+    <a href="/terms"><button class="button-white"><span class="editable">Terms of Service</span></button></a>
   </section>
