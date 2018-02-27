@@ -131,6 +131,9 @@ section {
 .space-right {
   padding-right: 1%;
 }
+.start-button {
+  padding-top: 1%;
+}
 @media all and (max-width:1024px) {
   .space-left {
     padding-left: 0;
@@ -142,6 +145,9 @@ section {
 @media all and (max-width:576px) {
   section,.wide-section {
     padding: 5%;
+  }
+  .start-button {
+    display: none;
   }
 }
 
