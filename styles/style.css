@@ -65,6 +65,9 @@ ul {
 .text-pink {
   color: #fc1a9e;
 }
+.text-bold {
+  font-weight: bolder;
+}
 
 a {
   color: inherit;
@@ -133,6 +136,7 @@ section {
 }
 .start-button {
   padding-top: 1%;
+  padding-bottom: 2%;
 }
 @media all and (max-width:1024px) {
   .space-left {
@@ -140,6 +144,10 @@ section {
   }
   .space-right {
     padding-right: 0;
+  }
+  .start-button {
+    padding-top: 3%;
+    padding-bottom: 2%;
   }
 }
 @media all and (max-width:576px) {
@@ -155,7 +163,7 @@ section {
 .translation-icon {
   position: absolute;
   height: 45px;
-  top: 5%;
+  top: 2.5%;
   right: 1%;
 }
 
@@ -164,6 +172,11 @@ section {
 }
 .small-logo {
   max-height: 20vh;
+}
+@media all and (max-width:576px) {
+  .hero-logo {
+    padding-top: 5vh;
+  }
 }
 
 .bg-hero {
@@ -183,6 +196,7 @@ section {
 .shadow {
   box-shadow: 2px 2px 10px grey;
 }
+
 
 /* form styling */
 label,input,::placeholder {
