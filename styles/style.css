@@ -166,6 +166,9 @@ section {
   top: 2.5%;
   right: 1%;
 }
+.translation-icon-footer {
+  height: 45px;
+}
 
 .hero-logo {
   max-height: 50vh;
