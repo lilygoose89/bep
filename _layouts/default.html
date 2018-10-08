@@ -33,4 +33,23 @@
   <script src="/js/main.js" type="text/javascript"></script>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYjhQkF5CgJs7Aa7vtzxeDNwucrNt4ptQ&libraries=places"></script>
+  <!-- for fb messenger chat -->
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'your-app-id',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v3.1'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 </body>
